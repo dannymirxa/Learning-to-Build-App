@@ -1,0 +1,49 @@
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "remote.autoForwardPortsSource": "hybrid",
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "mssql.connections": [
+        {
+            "server": "localhost,1433",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "root",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true
+        },
+        {
+            "server": "localhost,1433",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql"
+        }
+    ],
+    "pgsql.connections": [
+        {
+            "host": "localhost",
+            "dbname": "",
+            "user": "postgres",
+            "password": "",
+            "emptyPasswordInput": false,
+            "port": "5455",
+            "profileName": "restapi"
+        }
+    ],
+    "redhat.telemetry.enabled": true,
+    "editor.fontLigatures": false
+}
