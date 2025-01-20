@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendant Selector */
+        div p {
+            color: red;
+        }
+
+        div section p {
+            color: blue;
+        }
+        /* Child Selector */
+        div > p {
+            font-size: 36px;
+        }
+        /* Adjacent Sibling Selector */
+        div + p {
+            color: green;
+            font-size: 36px;
+        }
+        /* General Sibling Selector */
+        div ~ p {
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>First p element from first div element</p>
+        <p>Second p element from first div element</p>
+        <section>
+            <!-- p below still consider descendant of div -->
+            <!-- p below is not the children of div -->
+            <p>First p element from first section element</p>
+        </section>
+    </div>
+    <br>
+        <section>
+            Hello
+        </section>
+    <div>
+        <p>First p element from second div element</p>
+        <p>Second p element from second div element</p>
+    </div>
+    <!-- p below is after and NEXT a div element, which considered adjacent sibling -->
+    <p>First p element AFTER div element</p>
+    <section>
+        <p>p element in second section</p>
+    </section>
+    <!-- p below is general sibling because it is AFTER a div but not next to div -->
+    <p>p element after first section</p>
+    <section>
+        <p>p element in third section</p>
+    </section>
+    <p>p element after third section</p>
+</body>
+</html>

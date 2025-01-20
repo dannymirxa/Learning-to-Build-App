@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Select elements with a specific attribute, in this case the class attribute */
+      p[class] {
+        color: red;
+      }
+
+      /* Select elements with a specific attribute and value */
+      a[href="https://www.supertastyburgers.com"]
+      {
+        color: green;
+      }
+
+      /* Select elements where an attribute contains a specific value that includes  whitespace separated values, notice tilde: */
+      li[class~="main-dish"] {
+        font-weight: bold;
+      }
+
+      /* Select elements with a specific attribute that starts with a certain value */
+      input[placeholder^="Email"] {
+        background-color: yellow;
+      }
+
+      /*Select elements with a specific attribute that ends with a specific value */
+      a[href$=".io"] {
+        color: red;
+      }
+
+      /* Select elements with a specific attribute that contains a certain value anywhere within it */
+      input[placeholder*="No"] {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="advert">We make the best burgers</p>
+    <div>Div without attribute</div>
+    <p class="advert">Super tasty burgers</p>
+
+    <a href="https://www.supertastyburgers.com">Go to tasty burgers website</a>
+
+    <ul>
+      <li class="burger main-dish">cheeseburger</li>
+      <li class="ice-cream dessert">Ice cream</li>
+    </ul>
+
+    <input type="text" placeholder="Email" />
+    <br />
+    <br />
+    <a href="https://www.supertastyicecream.io"
+      >Go to tasty ice cream website</a
+    >
+
+    <br />
+    <br />
+    <input type="text" placeholder="Phone No " />
+  </body>
+</html>

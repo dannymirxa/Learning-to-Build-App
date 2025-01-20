@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* when hovered, changes style */
+      .button:hover {
+        color: blue;
+      }
+      /*  when clicked ,changes style */
+      .button:active {
+        border: 1px solid red;
+      }
+      /* when focused, changes style */
+      .input-field:focus {
+        background-color: lightyellow;
+      }
+      /* if you clicked the link */
+      a:visited {
+        color: green;
+      }
+      /* Styles every second list item */
+      .food-list:nth-child(even) {
+        background-color: lightgreen;
+      }
+
+      /* Styles the first item  */
+      .products-list:first-child {
+        color: red;
+      }
+      /* Styles the last  item  */
+      .products-list:last-child {
+        color: pink;
+      }
+      /* Selects the second .products-list item */
+      .products-list:nth-child(2) {
+        font-size: 36px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Login</button>
+    <br /><br />
+    <input class="input-field" type="text" placeholder="email" />
+    <br /><br />
+    <a href="https://google.com">google</a>
+    <br /><br />
+    <ul>
+      <li class="food-list">Chicken</li>
+      <li class="food-list">Beef</li>
+      <li class="food-list">Salad</li>
+      <li class="food-list">Soup</li>
+    </ul>
+    <br /><br />
+    <ul>
+      <li class="products-list">Phone</li>
+      <li class="products-list">PC</li>
+      <li class="products-list">Watch</li>
+      <li class="products-list">Keyboard</li>
+    </ul>
+  </body>
+</html>
